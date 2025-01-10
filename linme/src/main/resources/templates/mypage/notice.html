@@ -39,19 +39,19 @@
 
             <!-- 주요 정보 표시 -->
             <div class="mainInfo">
-                <div class="infoBox">
-                    <p><a th:href="@{/mypage/shopping/order}">쇼핑내역</a></p>
-                    <span th:text="${shoppingHistoryCount}"></span>
-                </div>
-                <div class="infoBox">
-                    <p><a th:href="@{/mypage/coupon}">쿠폰</a></p>
-                    <span th:text="${couponCount}"></span>
-                </div>
-                <div class="infoBox">
-                    <p><a th:href="@{/mypage/review}">리뷰</a></p>
-                    <span th:text="${reviewCount}"></span>
-                </div>
-            </div>
+          <a class="infoBox" th:href="@{/mypage/shopping/order}">
+            <img th:src="@{/assets/img/mypage/order_icon.png}" />
+            <span>쇼핑내역</span>
+          </a>
+          <a class="infoBox" th:href="@{/mypage/coupon}">
+            <img th:src="@{/assets/img/mypage/coupon_icon.png}" />
+            <span>쿠폰</span>
+          </a>
+          <a class="infoBox" th:href="@{/mypage/review}">
+            <img th:src="@{/assets/img/mypage/review_icon.png}" />
+            <span>리뷰</span>
+          </a>
+        </div>
         </div>
         <div class="contentContainer">
             <!-- 쇼핑 및 고객센터 메뉴 -->
